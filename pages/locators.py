@@ -16,3 +16,4 @@ class ProductPageLocators:
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
     PRODUCT_NAME_IN_MESSAGE = (By.XPATH, "//div[@id='messages']/div[1]//strong")
     PRODUCT_PRICE_IN_MESSAGE = (By.XPATH, "//div[@id='messages']/div[3]//p/strong")
+    SUCCESS_ALERT = (By.CLASS_NAME, "alert-success")
