@@ -14,4 +14,5 @@ class ProductPageLocators:
     ADD_TO_BASKET_BUTTON = (By.CLASS_NAME, "btn-add-to-basket")
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
-    MESSAGES = (By.ID, "messages")
+    PRODUCT_NAME_IN_MESSAGE = (By.XPATH, "//div[@id='messages']/div[1]//strong")
+    PRODUCT_PRICE_IN_MESSAGE = (By.XPATH, "//div[@id='messages']/div[3]//p/strong")
