@@ -1,6 +1,5 @@
 from .base_page import BasePage
 from .locators import ProductPageLocators
-import time
 
 
 class ProductPage(BasePage):
@@ -17,7 +16,6 @@ class ProductPage(BasePage):
         self.should_be_the_same_product_name_in_message()
         #  print(self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE_IN_MESSAGE).text)
         self.should_be_basket_price_like_product_price()
-        #  time.sleep(5)
 
     def should_be_the_same_product_name_in_message(self):
         assert self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text == \
